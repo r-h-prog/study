@@ -1,0 +1,11 @@
+size,color,price,classlabel
+XL,red,1000,class1
+L,blue,6000,class2
+M,green,6000,class1
+L,yellow,3000,class1
+S,red,4000,class2
+L,green,5000,class3
+M,blue,7000,class1
+XL,red,10000,class2
+M,yellow,7000,class1
+M,red,6000,class3
