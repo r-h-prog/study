@@ -1,0 +1,22 @@
+<!-- base.htmlを継承 -->
+{% extends "base.html" %}
+{% block body %}
+<div class="row">
+  <div class="col s8 offset-s2">
+    <form action="/" id="upload_form" method="post" enctype="multipart/form-data">
+      <div class="file-field input-field row">
+        <div class="btn col s2">
+          <span>ファイル選択</span>
+          <input type="file" name="file">
+        </div>
+        <div class="file-path-wrapper col s8">
+          <input type="text" placeholder="左向きの画像を選択してください" class="file-path validate">
+        </div>
+        <div class="col s2">
+          <button type="submit" class="btn waves-effect waves-light blue">表示</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
