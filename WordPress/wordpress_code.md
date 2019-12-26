@@ -70,3 +70,15 @@
 
 
 参考: [WordPress Codex](http://wpdocs.osdn.jp/Main_Page)
+
+## テンプレート階層
+WordPressはファイル名によって表示するページのテンプレートが決まるようにルールが用意されている。このことを「テンプレート階層」と呼ぶ
+
+- トップページ：`index.php`もしくは`home.php`、`front-page.php`
+- 個別記事ページ： `single.php`
+- 記事一覧ページ：　`archive.php`
+- カテゴリーページ：　`category.php`
+- タグページ：　`tag.php`
+- 固定ページ：　`page.php`
+
+
