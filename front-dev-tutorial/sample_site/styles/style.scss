@@ -1,0 +1,37 @@
+@import 'modules/variables';
+@import 'modules/hero-slider';
+@import 'modules/mixin';
+@import 'modules/text-animation';
+
+@import 'breakpoints/base';
+
+@media screen and (min-width: 480px){
+  @import 'breakpoints/480up';
+}
+
+@media (min-width: 480px){
+  @import 'breakpoints/480up';
+}
+
+@media (min-width: 600px){
+  @import 'breakpoints/600up';
+}
+
+@media (min-width: 960px){
+  @import 'breakpoints/960up';
+}
+
+@media (min-width: 1280px){
+  @import 'breakpoints/1280up';
+}
+
+// Retinaディスプレイでのみ適用
+@media (min-resolution: 192dpi),
+  (-webkit-min-divice-pixel-ratio: 2){
+  @import "breakpoints/2x";
+}
+
+@media print{
+  @import 'breakpoints/print';
+}
+
