@@ -5,9 +5,8 @@
   $delay: 0s,
   $iteration-count: 1,
   $direction: normal,
-  $fill-mode: forwards,
-
-){
+  $fill-mode: forwards
+) {
   animation: {
     name: $name;
     duration: $duration;
