@@ -72,3 +72,44 @@ AとBの二つのクラスが付与された要素を指定する
 ```
 
 参考: [サルワカ](https://saruwakakun.com/html-css/basic/box-shadow)
+
+## ブロック要素の左右中央揃え
+
+```css
+width: 100px;
+margin: 0 auto;
+/* marginで左右中央揃えをする場合はwidthに値を指定していなければならない */
+```
+
+## transform -- translate
+
+```css
+transform: translate(100%, 100%);
+/* 上のようにすると物体の分だけx軸方向とy軸方向に移動する */
+```
+
+## transform -- skew
+
+```css
+transform: skew(-30deg);
+/* 上のようにすると平行四辺形ができる */
+```
+
+## transform -- transform-origin
+
+```css
+transform-origin: center center;
+/* 上のようにすると中心を軸として回転させる */
+```
+
+## z-indexが有効になる条件
+
+```css
+/* positionプロパティがstatic以外になっていること */
+```
+
+ローカルスタックコンテキストに注意
+
+## position: sticky;を使う時の注意点
+
+親要素にoverflow: hiddenが振られていると期待した動きにならない
