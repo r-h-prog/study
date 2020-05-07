@@ -113,3 +113,62 @@ transform-origin: center center;
 ## position: sticky;を使う時の注意点
 
 親要素にoverflow: hiddenが振られていると期待した動きにならない
+
+## CSSで3Dアニメーションをする場合
+
+```css
+transform-style: preserve-3d
+上のようにすることで子要素を3Dで表現することができる
+```
+
+## 中央に配置する方法
+
+```css
+.parent{
+    position: relative;
+}
+
+.child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* このようにした場合要素は重なる */
+```
+
+```css
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 重ならない */
+```
+
+## ローダーのアニメーションを作成したい場合参考になるサイト
+
+[SpinKit](https://github.com/tobiasahlin/SpinKit)
+
+## animationプロパティ
+
+### animation-timing-function
+
+アニメーションの緩急を決める
+
+### animation-delay
+
+アニメーションが開始するまでの遅延時間を決める
+
+### animation-iteration-count
+
+アニメーションの繰り返し数を決める
+
+### animation-direction
+
+reverseとすると100%から0%に変化する
+
+### animation-fill-mode
+
+forwardsとすると、アニメーション終了時の状態で画面に残る
+
