@@ -8,8 +8,8 @@
   height: 40px;
   background-color: #333333;
   margin: 100px auto;
-  -webkit-animation-name: sk-rotateplane;
-          animation-name: sk-rotateplane;
+  -webkit-animation-name: sk-rotateplane2;
+          animation-name: sk-rotateplane2;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-timing-function: ease;
@@ -24,7 +24,7 @@
           animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes sk-rotateplane {
+@-webkit-keyframes sk-rotateplane2 {
   0% {
     -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
             transform: perspective(120px) rotateX(0deg) rotateY(0deg);
@@ -39,7 +39,7 @@
   }
 }
 
-@keyframes sk-rotateplane {
+@keyframes sk-rotateplane2 {
   0% {
     -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
             transform: perspective(120px) rotateX(0deg) rotateY(0deg);
@@ -70,8 +70,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-animation-name: sk-bounce;
-          animation-name: sk-bounce;
+  -webkit-animation-name: sk-bounce2;
+          animation-name: sk-bounce2;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-timing-function: ease-in-out;
@@ -91,7 +91,7 @@
           animation-delay: -1s;
 }
 
-@-webkit-keyframes sk-bounce {
+@-webkit-keyframes sk-bounce2 {
   0%, 100% {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -102,7 +102,7 @@
   }
 }
 
-@keyframes sk-bounce {
+@keyframes sk-bounce2 {
   0%, 100% {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -126,8 +126,8 @@
   background-color: #333333;
   height: 100%;
   width: 6px;
-  -webkit-animation-name: sk-stretchdelay;
-          animation-name: sk-stretchdelay;
+  -webkit-animation-name: sk-stretchdelay2;
+          animation-name: sk-stretchdelay2;
   -webkit-animation-duration: 1.2s;
           animation-duration: 1.2s;
   -webkit-animation-timing-function: ease;
@@ -167,7 +167,7 @@
           animation-delay: -0.8s;
 }
 
-@-webkit-keyframes sk-stretchdelay {
+@-webkit-keyframes sk-stretchdelay2 {
   0%,
   40%,
   100% {
@@ -180,7 +180,7 @@
   }
 }
 
-@keyframes sk-stretchdelay {
+@keyframes sk-stretchdelay2 {
   0%,
   40%,
   100% {

@@ -1,0 +1,41 @@
+@import "mixin";
+
+img{
+  // 親要素の大きさいっぱいに画像を表示する
+  max-width: 100%;
+}
+
+.cover-slide{
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: orange;
+  }
+  &.inview{
+    &::after{
+      @include animation($name: kf-cover-slide);
+    }
+  }
+}
+
+@keyframes kf-cover-slide{
+  0%{
+    right: 100%;
+    left:0;
+  }
+  50%{
+    left: 0;
+    right: 0;
+  }
+  100%{
+    left: 100%;
+    right: 0;
+  }
+
+}

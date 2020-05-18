@@ -7,10 +7,10 @@
     height: 40px;
     background-color: #333333;
     margin: 100px auto;
-    @include animation(sk-rotateplane, $iteration-count: infinite);
+    @include animation(sk-rotateplane2, $iteration-count: infinite);
   }
 
-  @keyframes sk-rotateplane {
+  @keyframes sk-rotateplane2 {
     0%{
       transform: perspective(120px) rotateX(0deg) rotateY(0deg);
     }
@@ -39,7 +39,7 @@
      top:0;
      left: 0;
      @include animation(
-       $name: sk-bounce,
+       $name: sk-bounce2,
        $duration: 2s,
        $iteration-count: infinite,
        $timing-function: ease-in-out
@@ -49,7 +49,7 @@
        animation-delay: -1s;
      }
 
-     @keyframes sk-bounce {
+     @keyframes sk-bounce2 {
        0%, 100%{
          transform: scale(0);
        }
@@ -73,7 +73,7 @@
       height: 100%;
       width: 6px;
       @include animation(
-        $name: sk-stretchdelay,
+        $name: sk-stretchdelay2,
         $iteration-count: infinite,
         $duration: 1.2s,
         
@@ -85,12 +85,12 @@
         }
       }
 
-      @keyframes sk-stretchdelay{
+      @keyframes sk-stretchdelay2{
         0%,
-    40%,
-    100% {
-      transform: scaleY(0.4);
-    }
+        40%,
+        100% {
+          transform: scaleY(0.4);
+        }
         20% {
       transform: scaleY(1);
     }

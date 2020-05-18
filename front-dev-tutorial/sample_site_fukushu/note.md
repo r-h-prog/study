@@ -172,3 +172,6 @@ reverseとすると100%から0%に変化する
 
 forwardsとすると、アニメーション終了時の状態で画面に残る
 
+### object-fit: cover
+
+background-size: coverと同じ効果をimgセレクタに付与するもの
