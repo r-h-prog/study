@@ -175,3 +175,14 @@ forwardsとすると、アニメーション終了時の状態で画面に残る
 ### object-fit: cover
 
 background-size: coverと同じ効果をimgセレクタに付与するもの
+
+## DOMContentLoaded vs load
+
+- DOMContentLoaded
+  - html要素がDOMに変換されたタイミングで発火。documentオブジェクトに対しても利用できる
+- load
+  - 画像などが全てダウンロードされたタイミングで発火。windowオブジェクトに対してしか利用できない
+
+## display: inline-blockとしてインライン要素として扱うと空白文字などが無視される。表示させる場合はnbspを使う
+
+## DOMの更新は最小限に抑えた方が良い
