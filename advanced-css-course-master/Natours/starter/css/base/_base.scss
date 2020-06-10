@@ -8,10 +8,28 @@
 }
 
 html{
-  /* ルートフォントサイズ16pxを10pxで割った値 */
-  font-size: 62.5%;
+  /* 10pxをルートフォントサイズ16pxで割った値 */
+  font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5
+
+ @include respond(tab-land){ // <1200
+    font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25
+  }
+  @include respond(tab-port){ // < 900
+    font-size: 50%; //1rem = 8px, 8/16 = 50
+  }
+   @include respond(phone){ // < 600
+    font-size: 30%; //1rem = 4.8px, 4.8/16 = 30
+  }
+  
+  @include respond(bid-desktop){
+    font-size: 80%; 
+  }
 }
 
 body{
   box-sizing: border-box;
+}
+
+@media( max-width: 600px){
+
 }
