@@ -21,8 +21,8 @@ html{
     font-size: 30%; //1rem = 4.8px, 4.8/16 = 30
   }
   
-  @include respond(bid-desktop){
-    font-size: 75%; 
+  @include respond(big-desktop){
+    font-size: 80%; 
   }
 }
 
