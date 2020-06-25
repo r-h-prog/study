@@ -33,3 +33,18 @@ background-filterを利用する
         background-color: rgba($color-black, .3);
     }
 ```
+
+## 要素が回転した時に裏面から表面が見えないようにする
+
+```css
+backface-visibility: hidden;
+```
+
+## heightが0になってしまう時
+
+子要素のpositionをabsoluteなどした時に、親要素の高さが失われることがある。
+そのような時には子要素の高さを親要素にも設定する。
+
+## 子要素が親要素からはみ出ている場合はoverflowをhiddenにする
+
+## background-blend-modeはCSSで写真を加工する
