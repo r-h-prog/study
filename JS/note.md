@@ -55,3 +55,17 @@ DOMel.insertBefore(newElement, reference);
 ## 兄弟要素を取得するにはnextElementSiblingを利用する
 
 ## 最初の子要素を取得するにはfirstElementChildを利用する
+
+## バブリングした時に意図しないイベントが発生するのを止める
+
+```js
+target.addEventListener('click', (e) => {
+  e.stopPropagetion();
+});
+```
+
+## aタグをクリックしてもリンク先に飛ばないようにするには
+
+```js
+e.preventDefault();
+```
