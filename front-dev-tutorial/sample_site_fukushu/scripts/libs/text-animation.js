@@ -1,6 +1,7 @@
 class TextAnimation {
     constructor(el) {
         this.DOM = {};
+        // DOMが渡ってこなかった場合に備える
         this.DOM.el = el instanceof HTMLElement ? el : document.querySelector(el);
         this.chars = this.DOM.el.innerHTML.trim().split("");
         this.DOM.el.innerHTML = this._splitText();

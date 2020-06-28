@@ -186,3 +186,44 @@ background-size: coverと同じ効果をimgセレクタに付与するもの
 ## display: inline-blockとしてインライン要素として扱うと空白文字などが無視される。表示させる場合はnbspを使う
 
 ## DOMの更新は最小限に抑えた方が良い
+
+## スクロール検知にはIntersectionObserverを利用する
+
+```js
+// 監視対象のDOMを取得
+const child = document.querySelector('.child');
+// callback関数(cb)を渡して初期化処理
+ const io = new IntersectionObserver(cb);
+// 監視したい対象のDOMを登録する
+io.observe(child);
+
+// childが画面に入った時と外に出る時にcallback関数（cb）が呼ばれる
+
+const cb = function(entries, observer){
+    entries.forEach(entry => {
+        // ioには複数のDOM(entries)を登録することができるため、それぞれを1つずつ(entry)取り出していく
+        if(entry.isIntersecting){
+            // 画面に入ってきたらinviewクラスを付与する
+            entry.target.classList.add('inview');
+            // 1回呼び出して、それ以降監視したくない場合は引数observerにunobserveメソッドを使う
+            // entry.targetは監視対象のDOMを指す（child）
+            observer.unobserve(entry.target);
+        }else {
+            // 画面から出たらinviewクラスを外す
+            entry.target.classList.remove('inview');
+        }
+    });
+}
+
+// IntersectionObserverオブジェクトにはoptionsを引数にとれる
+const options = {
+    //  親要素との交差点を監視したい場合設定する
+    root: null,
+    // 画面の監視開始位置を決める
+    rootMargin: "300px 0px",
+    // DOMの監視開始位置を決める
+    threshold: [0, 0.5, 1]
+};
+```
+
+## スクロール監視をやめたい時はdisconnectメソッドを使う
