@@ -227,3 +227,5 @@ const options = {
 ```
 
 ## スクロール監視をやめたい時はdisconnectメソッドを使う
+
+## touch-startはスマホでタッチした際に発火するイベント。clickイベントよりも反応が早い
