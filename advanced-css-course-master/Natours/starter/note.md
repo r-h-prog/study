@@ -48,3 +48,9 @@ backface-visibility: hidden;
 ## 子要素が親要素からはみ出ている場合はoverflowをhiddenにする
 
 ## background-blend-modeはCSSで写真を加工する
+
+## 画像の周りに文字を回り込ませるにはshape-outsideプロパティを利用する
+
+## backface-visibilityをhiddenにすると解決する問題が結構あるらしい
+
+## object-fitをcoverに設定すると、アスペクト比を保ったまま親要素を埋める。ただし、切り取る
