@@ -69,3 +69,13 @@ target.addEventListener('click', (e) => {
 ```js
 e.preventDefault();
 ```
+
+## ラジオボタンでは、id名と同じ名前をlabelタグのfor属性につける
+
+## Form要素はdocument.formsでまとめて取得できる
+
+## XSS対策
+
+```js
+// element.innerHTML, document.write, insertAdjacentHTML, evalはできるだけ使わない
+```

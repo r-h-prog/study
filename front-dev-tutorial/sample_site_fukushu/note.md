@@ -229,3 +229,19 @@ const options = {
 ## スクロール監視をやめたい時はdisconnectメソッドを使う
 
 ## touch-startはスマホでタッチした際に発火するイベント。clickイベントよりも反応が早い
+
+## pace.js(ローダー)の使い方
+
+ローディング時にボディにpace-runningクラスが付与されるので以下のようにすると良い
+
+```css
+/* 画像がチラつく場合はtransitionが原因で起こることがある。そのときは終点できちんとプロパティを指定する */
+.pace-done #global-container{
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+#global-container{
+    opacity: 0;
+}
+```

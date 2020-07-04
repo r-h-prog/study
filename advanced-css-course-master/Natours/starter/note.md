@@ -54,3 +54,15 @@ backface-visibility: hidden;
 ## backface-visibilityをhiddenにすると解決する問題が結構あるらしい
 
 ## object-fitをcoverに設定すると、アスペクト比を保ったまま親要素を埋める。ただし、切り取る
+
+## 兄弟要素を指定するときは + を使用する
+
+## 間に他の要素が入っている場合は ~ を使用する
+
+## placeholderをスタイリングしたい場合は、::placeholderを使う
+
+## ラジオボタンのスタイルを整えたい場合は、labelとinputを接続して、inputを隠す
+
+## column-countで数字を指定すると、指定した列数で文章が配置される
+
+## 
