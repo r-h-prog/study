@@ -79,3 +79,6 @@ e.preventDefault();
 ```js
 // element.innerHTML, document.write, insertAdjacentHTML, evalはできるだけ使わない
 ```
+
+## Promise
+
