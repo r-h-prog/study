@@ -2,7 +2,7 @@
 
 ## Interface
 
-オブジェクトの方の定義に使う
+オブジェクトの型の定義に使う
 
 ```tsx
 interface NAME {
@@ -37,4 +37,47 @@ const userA: USER = {
   username: "xxx",
   password: "yyy",
 };
+```
+
+## Union Types
+
+受け付ける型を限定することができる
+
+```tsx
+let arrayUni: (number | string)[];
+// trueを入れるとエラーになる
+arrayUni = [0, 1, 2, "hello", true];
+```
+
+## keyof
+
+指定したキーしか受け取らない
+
+```tsx
+type KEYS = {
+  primary: string;
+  secondary: string;
+};
+let key: keyof KEYS;
+key = "primary";
+// primなどとするとエラーになる
+// key = "prim"
+```
+
+## GEnerics
+
+```tsx:App.tsx
+// interface を定義した段階では型は定まっていない
+interface GEN<T> {
+  item: T;
+}
+
+// 実際に使用するときに動的に型を指定できる
+const gen0: GEN<string> = { item: "hello" };
+const gen2: GEN<number> = { item: 12 };
+
+// 特定の型のみを指定する場合は extends を付ける
+interface GEN2<T extends string | number> {
+  item: T;
+}
 ```
