@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const url = "https://dog.ceo/api/breeds/image/random";
+      const options = {
+        method: "GET",
+      };
+
+      const fetchTest = fetch(url, options).then((response) => response.json());
+
+      console.log(fetchTest);
+    </script>
+  </body>
+</html>

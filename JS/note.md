@@ -5,34 +5,31 @@
 ## 属性を追加する時
 
 ```js
-
 // setAttributeを使用するより、valueメソッドを使う方が良い
 
 // 好ましくない
-el.setAttribute('type', 'text');
+el.setAttribute("type", "text");
 
 // 好ましい
-el.type = 'text';
+el.type = "text";
 ```
 
 ## タグ内部の文字を編集したい場合
 
 ```js
-
-el.textContent = '文字列';
-
+el.textContent = "文字列";
 ```
 
 ## タグを作成する場合
 
 ```js
 // クリエイトエレメントメソッドを利用する
-const el = document.createElement('a');
+const el = document.createElement("a");
 
-el.href = 'https://google.com';
+el.href = "https://google.com";
 ```
 
-## 指定したDOMの中に要素を追加したい場合はappendChildを利用する
+## 指定した DOM の中に要素を追加したい場合は appendChild を利用する
 
 ```js
 target.appendChild(newElement);
@@ -52,33 +49,32 @@ target.parentNode.appendChild(newElement);
 DOMel.insertBefore(newElement, reference);
 ```
 
-## 兄弟要素を取得するにはnextElementSiblingを利用する
+## 兄弟要素を取得するには nextElementSibling を利用する
 
-## 最初の子要素を取得するにはfirstElementChildを利用する
+## 最初の子要素を取得するには firstElementChild を利用する
 
 ## バブリングした時に意図しないイベントが発生するのを止める
 
 ```js
-target.addEventListener('click', (e) => {
+target.addEventListener("click", (e) => {
   e.stopPropagetion();
 });
 ```
 
-## aタグをクリックしてもリンク先に飛ばないようにするには
+## a タグをクリックしてもリンク先に飛ばないようにするには
 
 ```js
 e.preventDefault();
 ```
 
-## ラジオボタンでは、id名と同じ名前をlabelタグのfor属性につける
+## ラジオボタンでは、id 名と同じ名前を label タグの for 属性につける
 
-## Form要素はdocument.formsでまとめて取得できる
+## Form 要素は document.forms でまとめて取得できる
 
-## XSS対策
+## XSS 対策
 
 ```js
 // element.innerHTML, document.write, insertAdjacentHTML, evalはできるだけ使わない
 ```
 
-## Promise
-
+## CORS
