@@ -17,3 +17,30 @@
 太くて大きな文字の場合は、間隔を狭くすると良いことが多い。行の間隔も同じく。
 
 フォントが小さい場合は、文字感覚を広くすると可読性があがる
+
+### 色
+
+### 画像
+
+画像の一部を切り抜きズームすることで様になる（PEEKING THROUGH THE BLINDS）
+
+画像の一部をトリミングして、残りをぼかす(SOFT CROP)
+
+### Rule of Thirds
+
+## webflow について
+
+### プロパティを継承したクラスの作成
+
+クラスをコピーした後に、rename
+
+### 理想の画像サイズ
+
+300kb 未満
+
+[画像圧縮ツール:imagecompressor.com](https://imagecompressor.com/ja/)
+
+## 画面を縮小した時にレイアウトが崩れる場合
+
+minwidth などの値を設定する
+margin,padding を設定する
