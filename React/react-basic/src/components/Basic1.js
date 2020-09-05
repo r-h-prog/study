@@ -29,6 +29,7 @@ const Basic1 = () => {
           type="text"
           value={product.name}
           onChange={(evt) =>
+            // ...productがないと、useStateのpriceの情報が失われる。...productとしてオブジェクトを展開することでそれを防ぐ
             setProducts({ ...product, name: evt.target.value })
           }
         />
