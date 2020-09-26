@@ -1,4 +1,7 @@
+// letで定義した変数はscriptオブジェクトに格納される
 let noramlFn;
+
+// varで定義された変数や無名関数はglobalオブジェクトに格納される
 
 normalFn = {
   id: 43,
