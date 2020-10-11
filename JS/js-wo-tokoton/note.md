@@ -1,4 +1,3 @@
-
 # まとめ
 
 ## 関数内で定義された変数は関数外では使用できない
@@ -9,25 +8,25 @@
 // setAttributeを使用するより、valueメソッドを使う方が良い
 
 // 好ましくない
-el.setAttribute("type", "text");
+el.setAttribute('type', 'text');
 
 // 好ましい
-el.type = "text";
+el.type = 'text';
 ```
 
 ## タグ内部の文字を編集したい場合
 
 ```js
-el.textContent = "文字列";
+el.textContent = '文字列';
 ```
 
 ## タグを作成する場合
 
 ```js
 // クリエイトエレメントメソッドを利用する
-const el = document.createElement("a");
+const el = document.createElement('a');
 
-el.href = "https://google.com";
+el.href = 'https://google.com';
 ```
 
 ## 指定した DOM の中に要素を追加したい場合は appendChild を利用する
@@ -57,7 +56,8 @@ DOMel.insertBefore(newElement, reference);
 ## バブリングした時に意図しないイベントが発生するのを止める
 
 ```js
-target.addEventListener("click", (e) => {
+// バブリングとは
+target.addEventListener('click', (e) => {
   e.stopPropagetion();
 });
 ```
@@ -79,4 +79,3 @@ e.preventDefault();
 ```
 
 ## CORS
-
