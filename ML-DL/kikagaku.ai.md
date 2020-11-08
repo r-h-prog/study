@@ -65,3 +65,63 @@
 #### ロジスティック回帰
 
 ![スクリーンショット 2020-11-03 20.37.22](https://i.imgur.com/DFO5Tmd.png)
+
+![スクリーンショット 2020-11-04 20.06.23](https://i.imgur.com/VUYmUvf.png)
+
+![スクリーンショット 2020-11-04 20.06.38](https://i.imgur.com/7IhiduJ.png)
+
+![スクリーンショット 2020-11-04 20.14.43](https://i.imgur.com/J3usEZM.png)
+
+![スクリーンショット 2020-11-04 20.15.14](https://i.imgur.com/YMkWKiu.png)
+
+#### 分類の評価方法
+
+![スクリーンショット 2020-11-05 20.49.28](https://i.imgur.com/yKCwr7M.png)
+
+![スクリーンショット 2020-11-05 20.52.07](https://i.imgur.com/eNrwQ1G.png)
+
+![スクリーンショット 2020-11-05 20.53.35](https://i.imgur.com/kMkJfFQ.png)
+
+**True/Falseは予測したものが正しいか誤りか
+Positive/Negativeは予測値を正例としたか負例としたか**
+
+##### Accuracy(正解率)
+
+![スクリーンショット 2020-11-05 20.57.30](https://i.imgur.com/62jdAQZ.png)
+
+##### Precision(適合率)
+
+![スクリーンショット 2020-11-05 20.58.08](https://i.imgur.com/rXbzSAi.png)
+
+##### Recall(再現率)
+
+![スクリーンショット 2020-11-05 20.58.40](https://i.imgur.com/MEzXWwF.png)
+
+##### F1 Score(F値)
+
+![スクリーンショット 2020-11-05 20.59.10](https://i.imgur.com/l2WmP4j.png)
+
+### 機械学習　実践（ハイパーパラメータ)
+
+#### ハイパーパラメータ
+
+**k-分割交差検証**
+![スクリーンショット 2020-11-07 18.20.31](https://i.imgur.com/iTyzSHe.png)
+
+![スクリーンショット 2020-11-07 18.21.34](https://i.imgur.com/UF7RNwL.png)
+
+![スクリーンショット 2020-11-07 18.21.51](https://i.imgur.com/bdTLkFM.png)
+
+![スクリーンショット 2020-11-07 18.22.01](https://i.imgur.com/govRzrn.png)
+
+#### ハイパーパラメータの調整方法
+
+- **手動での調整**
+- **グリッドサーチ**
+- **ランダムサーチ**
+- **ペイズ最適化**
+
+##### グリッドサーチ
+
+![スクリーンショット 2020-11-07 18.45.00](https://i.imgur.com/qqDa35h.png)
+
