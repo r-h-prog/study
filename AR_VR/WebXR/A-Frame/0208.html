@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene vr-mode-ui="enabled: false">
+        <!-- <a-box 
+            position="0 0 -2" 
+            rotation="0 45 0" 
+            material="color:#4cc3d9"
+            animation="property: rotation; from: 0 0 0; to: 360 360 0; loop: true; dur:3000; easing: linear;"
+            animation__2="property: scale; from: 1 1 1; to: 0.1 0.1 0.1; dur:1000; loop: true; dir: alternate;">
+        </a-box> -->
+        <!-- 水色 -->
+        <a-box
+        position="0 0 -3"
+        rotation="0 45 0"
+        material="color: #4CC3D9"
+        animation="property: rotation; from: 0 0 0; to: 360 360 0; loop: true; dur: 3000; easing: linear"
+        animation__2="property: scale; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1000; loop: true; dir: alternate"
+      ></a-box>
+      <!-- 黄色 -->
+      <a-box
+        position="-3 0 -1.5"
+        rotation="0 45 0"
+        material="color: #fcf876"
+        animation="property: rotation; from: 0 0 0; to: 360 360 0; loop: true; dur: 3000; easing: linear"
+        animation__2="property: scale; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1000; loop: true; dir: alternate"
+      ></a-box>
+      <!-- ピンク -->
+      <a-box
+        position="3 0 -1.5"
+        rotation="0 45 0"
+        material="color: #ffb0b0"
+        animation="property: rotation; from: 0 0 0; to: 360 360 0; loop: true; dur: 3000; easing: linear"
+        animation__2="property: scale; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1000; loop: true; dir: alternate"
+      ></a-box>
+      <!-- オレンジ -->
+      <a-box
+        position="-3 0 1.5"
+        rotation="0 45 0"
+        material="color: #f39233"
+        animation="property: rotation; from: 0 0 0; to: 360 360 0; loop: true; dur: 3000; easing: linear"
+        animation__2="property: scale; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1000; loop: true; dir: alternate"
+      ></a-box>
+      <!-- 青 -->
+      <a-box
+        position="3 0 1.5"
+        rotation="0 45 0"
+        material="color: #7579e7"
+        animation="property: rotation; from: 0 0 0; to: 360 360 0; loop: true; dur: 3000; easing: linear"
+        animation__2="property: scale; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1000; loop: true; dir: alternate"
+      ></a-box>
+      <!-- みどり -->
+      <a-box
+        position="0 0 3"
+        rotation="0 45 0"
+        material="color: #28df99"
+        animation="property: rotation; from: 0 0 0; to: 360 360 0; loop: true; dur: 3000; easing: linear"
+        animation__2="property: scale; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1000; loop: true; dir: alternate"
+      ></a-box>
+        <a-sky color="#f6f6f6"></a-sky>
+        <a-entity 
+            camera
+            animation="property: rotation; from: 0 0 0; to: 0 360 0; loop: true; dur: 10000; easing: linear">
+        </a-entity>
+    </a-scene>
+</body>
+</html>
