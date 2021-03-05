@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene background="color:black;">
+        <a-plane 
+            position="0 0 -3" 
+            rotation="-90 0 0"
+            width="6"
+            height="3"
+            color="#955629"
+            shadow>
+        </a-plane>
+        <!-- type:directional;：光源、type:ambient;：反射光 -->
+        <!-- castShadow:true;：光を影に影響させる -->
+        <a-entity light="type:directional; castShadow:true; color=white;" position="-10 10 -1">
+
+        </a-entity>
+        <a-box 
+            position="-2 1 -3"  
+            rotation="0 0 0" 
+            color="lime" 
+            width="1" 
+            height="1" 
+            depth="1" 
+            shadow
+            animation="property:depth; to:2; dur:1000; easing: linear; loop: true; dir:alternate;">
+            <!-- property：アニメーションしたい属性（depth属性：奥行き） -->
+            <!-- to：その属性の変化値（1→2） -->
+            <!-- dur：アニメーションの周期（ミリ秒。1000は１秒） -->
+            <!-- easing：アニメーションのスタイル（linear：等速） -->
+            <!-- loop：繰り返し（true：繰り返す） -->
+            <!-- dir：方向（alternate：交互に繰り返す） -->
+        </a-box>
+        <a-sphere 
+            position="0 0.5 -3" 
+            radius="0.5" 
+            color="pink" 
+            shadow
+            animation="property: position; to:0 1.5 -3; dur: 2000; easing:easeInQuad; loop: true; dir:alternate;">
+            <!-- property：（position属性：位置） -->
+            <!-- to：その属性の変化値（"0 0.5 -3"→0 1.5 -3） -->
+            <!-- easing：（easeInQuad：自然な状態でゆっくり始まり、加速してゆっくり終わる） -->
+        </a-sphere>
+        <a-circle 
+            position="0 0.5 -3" 
+            rotation="-90 0 0" 
+            radius="1" 
+            color="gray" 
+            shadow
+            animation="property: position; to:0 1.5 -3; dur: 2000; easing:easeInQuad; loop: true; dir:alternate;">
+            <!-- to：その属性の変化値（"0 0.5 -3"→0 1.5 -3）球体とともに移動 -->
+        </a-circle>
+        <a-cylinder 
+            position="2 1 -3" 
+            rotation="0 0 0" 
+            radius="0.5" 
+            height="1" 
+            segments-radial="5" 
+            color="yellow" 
+            shadow
+            animation="  property:rotation; to:360 0 0 ; dur: 1000; easing:linear; loop: true; dir:normal;">
+            <!-- property：（rotation属性：回転） -->
+            <!-- to：その属性の変化値（"0 0 0"→360 0 0） -->
+            <!-- dir：（normal：順方向） -->
+        </a-cylinder>
+    </a-scene>
+
+</body>
+</html>
