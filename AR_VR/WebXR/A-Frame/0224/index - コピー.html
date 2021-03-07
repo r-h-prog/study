@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+      <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+      </head>
+      
+      <body style="margin:0;overflow:hidden;">
+        <!-- シーンを追加 -->
+        <a-scene embedded arjs="debugUIEnabled:false;">
+          <!-- 3DCGモデルの読み込み -->
+          <a-assets>
+            <a-asset-item id="vroid" src="asset/vroid.glb"></a-asset-item>
+          </a-assets>
+
+          <!-- 自作マーカーを追加 -->
+          <a-marker type="pattern" url="marker/pattern-QR_168738.patt">
+            <!-- 3Dモデルの呼び出し -->
+            <a-gltf-model src="#vroid"></a-gltf-model>
+          </a-marker>
+          <!-- カメラを追加 -->
+          <a-entity camera></a-entity>
+        </a-scene>
+      </body>
+</html>
