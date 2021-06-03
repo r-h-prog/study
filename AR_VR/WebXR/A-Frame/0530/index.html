@@ -1,0 +1,25 @@
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+  <a-assets>
+    <video id="sakura" autoplay loop="true" src="sakura_D_M.mp4"></video>
+  </a-assets>
+
+  <a-camera>
+    <a-cursor></a-cursor>
+  </a-camera>
+
+  <!-- Using the asset management system. -->
+  <a-video src="#sakura" width="16" height="9" position="0 0 -20"></a-video>
+
+  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+  <!-- <a-video src="airbending.mp4"></a-video> -->
+</a-scene>
+</body>
+
+</html>
