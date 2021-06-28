@@ -266,3 +266,12 @@
 
 ハレーションを回避するには、色と色の間に無彩色などを入れるorどちらかの色の彩度を下げる方法があります。
 ![image.png](https://chot.design/ckeditor_assets/pictures/4089/original_191227_3-7%E3%83%8F%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%9B%9E%E9%81%BF.png)
+
+#### 黄金比と白銀比
+
+- 黄金比
+  - 1:1.618
+- 白銀比
+  - 1:1.414
+
+![3320462682-chart-design-asymmetry](https://i.imgur.com/LCyJd0G.png)
